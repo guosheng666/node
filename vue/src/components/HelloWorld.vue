@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="http://localhost:3000/top1.png" alt="">
+    <img src="http://localhost:3000/file/img/top1.png" alt="">
   </div>
 </template>
 
