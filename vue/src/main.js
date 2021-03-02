@@ -1,11 +1,19 @@
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import App from './App.vue'
-import axios from "axios";
+import App from './App'
+import router from './router'
+import less from "less"
+import axios from "axios"
+import 'ant-design-vue/dist/antd.css';
 
 Vue.config.productionTip = false
-axios.defaults.baseURL="http://localhost:3000/"
 Vue.prototype.axios = axios
-
+Vue.use(less)
+/* eslint-disable no-new */
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+})

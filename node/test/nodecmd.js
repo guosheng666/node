@@ -26,7 +26,7 @@ connection.query('SELECT * FROM USER', function (error, results, fields) {
 connection.end();
 
 console.log(__dirname)
-app.use(express.static(__dirname))
+app.use(express.static(__dirname+"\\file"))
 // app.get("/getName",(req,res)=>{
 //     const data = url.parse(req.url,true).query
 //     console.log(data.name)
